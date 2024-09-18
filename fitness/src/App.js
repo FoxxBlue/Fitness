@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import DateCard from './Components/DateCard';
 
 function App() {
   return (
     <div className='bg-[#1F004B] h-screen m-0 p-8'>
-      <div className='w-64 h-16 border-[#51CCDC] rounded-xl m-1 border-2 overflow-hidden flex'>
-        <div className='py-2 px-4 border-green-300 border-2 border-t-transparent border-b-transparent border-l-transparent w-12  bg-[#600DB5] '>
-          <p className='text-white font-bold text-xl'>1</p>
-        </div>
-        <div className='text-[#51CCDC] px-4 py-2 text-md text-center justify-center items-center flex gap-2'>
-          <p>UPPER</p>
-          <p>BICEPS</p>
-          <p>CHEST</p>
-        </div>
+      <div className='flex flex-col md:flex-row flex-wrap gap-4'>
+        <DateCard day={1} abs={"Up"} small={"Biceps"} large={"Back"} />
+        <DateCard day={2} abs={"Low"} small={"Triceps"} large={"Legs"} />
+        <DateCard day={3} abs={"Side"} small={"Shoulders"} large={"Chest"} />
+        <DateCard day={4} abs={"Up"} small={"Biceps"} large={"Back"} />
+        <DateCard day={5} abs={"Low"} small={"Triceps"} large={"Legs"} />
+        <DateCard day={6} abs={"Side"} small={"Shoulders"} large={"Chest"} />
+        <DateCard day={7} abs={"Side"} small={"Shoulders"} large={"Chest"} />
       </div>
     </div>
   );
